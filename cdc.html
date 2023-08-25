@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Cadastro de clientes</title>
+    <title>Cadastro de produto</title>
 
     <link rel='stylesheet' href='cdc.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,31 +15,60 @@
 <body>
 
     <header>
-        <h1>Tela de cadastro</h1>
+        <h1>Minha loja 1.0</h1>
     </header>
 
     <main>
         <div class="title">
-            <h2>Clientes</h2>
-            <span>Lista de clientes</span>
+            <h2>Produtos</h2>
+            <span>Lista de produtos da minha loja.</span>
         </div>
 
         <div class="card">
             <div class="lineInput">
-                <label>Cliente</label>
-                <input type="text" id="cliente" placeholder="Nome do Cliente">
+                <label>Produto</label>
+                <input type="text" id="produto" placeholder="valor do produto">
             </div>
 
             <div class="lineInput">
-                <label>Numero</label>
-                <input type="tel" id="cliente" placeholder="Numero do Cliente">
+                <label>valor</label>
+                <input type="text" id="valor" placeholder="valor do produto">
             </div>
 
             <button onclick="produto.adicionar()">Adicionar</button>
             <button onclick="produto.excluir()">Deletar</button>
         </div>
 
-        <div class=""></div>
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th class="center">ID</th>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                    <th class="center">Ações</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="center">1</td>
+                        <td class="center">Mesa sala de estar</td>
+                        <td>1900</td>
+                        <td class="center">
+                            <img src="img/editar.png" alt="">
+                            <img src="img/deletar-usuario.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="center">2</td>
+                        <td class="center">Sofa</td>
+                        <td>1300</td>
+                        <td class="center">
+                            <img src="img/editar.png" alt="">
+                            <img src="img/deletar-usuario.png" alt="">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
     
 </body>
